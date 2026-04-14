@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teni Føxx | Official Website</title>
+    <style>
+        /* 基礎風格：深色質感 */
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        /* Home 區塊 */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('你的背景圖網址'); 
+            background-size: cover;
+            text-align: center;
+        }
+
+        h1 { font-size: 4rem; letter-spacing: 8px; margin-bottom: 0; color: #ff0055; }
+        p.subtitle { font-size: 1.2rem; color: #aaa; margin-top: 10px; }
+
+        /* 通用區塊樣式 */
+        section { padding: 100px 20px; max-width: 800px; margin: auto; }
+        h2 { font-size: 2rem; border-left: 5px solid #ff0055; padding-left: 15px; margin-bottom: 30px; }
+
+        /* Music 區塊 */
+        .music-player { background: #1a1a1a; padding: 30px; border-radius: 4px; border: 1px solid #333; }
+
+        /* About 區塊：設備清單 */
+        .specs { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .spec-item { background: #111; padding: 15px; border: 1px solid #222; }
+        .spec-item strong { color: #ff0055; display: block; margin-bottom: 5px; }
+
+        /* Contact 區塊 */
+        .contact-info { text-align: center; padding: 40px; background: #111; }
+        a { color: #ff0055; text-shadow: 0 0 10px rgba(255,0,85,0.5); text-decoration: none; font-weight: bold; }
+        
+        @media (max-width: 600px) {
+            .specs { grid-template-columns: 1fr; }
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TENI FØXX</h1>
+        <p class="subtitle">Music Producer / Rapper / Vocaloid P</p>
+    </header>
+
+    <section id="music">
+        <h2>Music</h2>
+        <div class="music-player">
+            <p style="margin-top:0;"><strong>Latest Project: EP "DNA"</strong></p>
+            <p style="font-size: 0.9rem; color: #888;">Coming Soon...</p>
+            <audio controls style="width: 100%; margin-top: 10px;">
+                <source src="你的音訊連結.mp3" type="audio/mpeg">
+                お使いのブラウザはオーディオ再生に対応していません。
+            </audio>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            北海道を拠点に活動する音楽プロデューサー。Trap、Drill、Pluggnbといったヒップホップサウンドを軸に、Vocaloidのエッセンスを融合させた独自のスタイルを展開。
+            
+        </p>
+        
+        <h3 style="margin-top: 40px; color: #888;">Studio Setup</h3>
+        <div class="specs">
+            <div class="spec-item"><strong>DAWs</strong>FL Studio / Cubase / Logic Pro</div>
+            <div class="spec-item"><strong>Audio Interface</strong>Yamaha AG03</div>
+            <div class="spec-item"><strong>Monitoring</strong>MDR-7506 / DT 900 Pro X</div>
+            <div class="spec-item"><strong>Plugins</strong>UAD / FabFilter / Waves / Sonnox</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <p>楽曲制作、お仕事のご依頼はこちらまで：</p>
+            <p style="font-size: 1.5rem; margin-top: 20px;">
+                <a href="mailto:your-email@example.com">your-email@example.com</a>
+            </p>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; color: #444; font-size: 0.8rem;">
+        &copy; 2026 Teni Føxx. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
